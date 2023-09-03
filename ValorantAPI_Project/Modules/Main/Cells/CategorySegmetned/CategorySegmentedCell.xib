@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22152" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22127"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="CategorySegmentedCell" customModule="ValorantAPI_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="shF-FF-5Ea">
+                        <rect key="frame" x="24" y="0.0" width="272" height="35"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8J-qa-eFD">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="35"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Agents">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="agentsButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3H7-L5-foo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgq-qM-Ece">
+                                <rect key="frame" x="90" y="0.0" width="118.66666666666669" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Weapons">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="weaponsButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SBW-y3-aFg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3a-nu-GJf">
+                                <rect key="frame" x="208.66666666666666" y="0.0" width="63.333333333333343" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Tiers">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tiersButtonTApped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2Sb-Tz-LUH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="DZO-Yw-I7W"/>
+                        </constraints>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AjO-gg-Bos">
+                        <rect key="frame" x="56.666666666666657" y="35" width="25" height="2"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="0Jy-g4-mKo"/>
+                            <constraint firstAttribute="height" constant="2" id="LUn-5F-Csg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AjO-gg-Bos" firstAttribute="centerX" secondItem="I8J-qa-eFD" secondAttribute="centerX" id="Cou-A4-E8t"/>
+                    <constraint firstItem="shF-FF-5Ea" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XPG-R1-CUx"/>
+                    <constraint firstAttribute="trailing" secondItem="shF-FF-5Ea" secondAttribute="trailing" constant="24" id="aUQ-Nk-FDj"/>
+                    <constraint firstItem="shF-FF-5Ea" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="mDN-go-5Nj"/>
+                    <constraint firstItem="AjO-gg-Bos" firstAttribute="top" secondItem="shF-FF-5Ea" secondAttribute="bottom" id="pEJ-6V-Pxj"/>
+                    <constraint firstAttribute="bottom" secondItem="AjO-gg-Bos" secondAttribute="bottom" id="xcR-Vs-F3y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="agentsButton" destination="I8J-qa-eFD" id="jvg-LV-ZdS"/>
+                <outlet property="tiersButton" destination="J3a-nu-GJf" id="1cA-5n-n7a"/>
+                <outlet property="weaponsButton" destination="Xgq-qM-Ece" id="5eS-Rr-GMa"/>
+            </connections>
+            <point key="canvasLocation" x="120.61068702290076" y="10.91549295774648"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
